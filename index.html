@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  id="gene">Generate</button>
+    <br>
+    <br>
+    <p></p>
+
+
+    <style>
+       button{
+        position: relative;
+        
+        left:43%;
+        top:300px;
+       }
+       p{
+        margin-top: 300px;
+        text-align: center;
+       margin-right: 130px;
+       }
+      
+    </style>
+
+
+<script>
+    document.getElementById("gene").addEventListener("click", message);
+
+    function message(){
+        let a=Math.random();
+        let b=(a*4)+1;
+        let c =Math.floor(b);
+        console.log(c);
+
+if(c==1){
+    document.querySelectorAll("p")[0].innerHTML="“Be yourself; everyone else is already taken.”";
+    document.querySelectorAll("body")[0].style.backgroundColor="violet";
+    
+}
+else if(c==2){
+    document.querySelectorAll("p")[0].innerHTML="“Be the change that you wish to see in the world.”";
+    document.querySelectorAll("body")[0].style.backgroundColor="bisque";
+    
+}
+else if(c==3){
+    document.querySelectorAll("p")[0].innerHTML="“A friend is someone who knows all about you and still loves you.”";
+    document.querySelectorAll("body")[0].style.backgroundColor="skyblue";
+    
+}
+else if(c==4){
+    document.querySelectorAll("p")[0].innerHTML="“Always forgive your enemies; nothing annoys them so much.”";
+    document.querySelectorAll("body")[0].style.backgroundColor="grey";
+    
+}else{
+    document.querySelectorAll("p")[0].innerHTML="“Without music, life would be a mistake.”";
+    document.querySelectorAll("body")[0].style.backgroundColor="lightblue";
+
+
+
+}
+
+
+    }
+</script>
+</body>
+</html>
